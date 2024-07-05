@@ -4,45 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form personalizado</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            background-color: rgb(103, 16, 109);
-        }
-
-        div {
-            display: inline-block;
-            width: 35vw;
-            height: 50vh;
-            background-color: rgba(0, 0, 0, 0.113);
-        }
-
-        #imagem {
-            background: url(imagens/img1.jpg) no-repeat center center;
-            background-size: contain;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <main>
-        <div>
-            <form action="cadastro.php">
-                <h1>Login</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor recusandae corporis porro, facilis saepe magnam itaque maxime dolore laborum dolorum, harum iusto ex repellat facere perferendis veniam animi cumque.</p>
-                <label for="inome">Nome:<input type="text" name="nome" id="inome"></label>
-                <label for="isenha">Senha:<input type="password" name="senha" id="isenha"></label>
+    <div id="imagem">
 
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-        <div id="imagem">
+    </div>
+    <div id="form">
+        <form action="cadastro.php">
+            <h1>Login</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor recusandae corporis porro, facilis saepe magnam itaque maxime dolore laborum dolorum, harum iusto ex repellat facere perferendis veniam animi cumque.</p>
+            <label for="inome">Nome:<input type="text" name="nome" id="inome"></label>
+            <label for="isenha">Senha:<input type="password" name="senha" id="isenha"></label>
 
-        </div>
-    </main>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>
